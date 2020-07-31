@@ -27,7 +27,12 @@ The following **additional** features are implemented:
 
 Here are walkthroughs of implemented user stories:
 
+### Version 1: Segmented Control
+The initial app used a segmented control to select between a 15%, 18%, and 20% tip rate.
 <img src='tipCalcSeg.gif' title='Tip Calculator Version 1' alt='Tip Calculator version 1' />
+
+### Version 2: Slider
+The segmented control was replaced with a slider so that any percent between 0% and 100% could be selected.
 <img src='tipCalcSlider.gif' title='Tip Calculator Version 2' alt='Tip Calculator version 2' />
 
 GIFs created with [Recordit](https://recordit.co/).
