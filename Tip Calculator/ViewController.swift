@@ -30,13 +30,13 @@ class ViewController: UIViewController {
         // Get the bill amount
         let bill = Double(billField.text!) ?? 0
         // Calculate the tip and total
-        let tipPercentage = Double(tipSlider.value)
-        let tip = bill * tipPercentage
+        let tipPercentage = Int(tipSlider.value * 100)
+        let tip = bill * Double(tipPercentage) / 100
         let total = bill + tip
         // Update the tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-        tipPercentLabel.text = String(format: "%.0f%%", tipPercentage * 100)
+        tipPercentLabel.text = String(format: "%d%%", tipPercentage)
     }
 }
 
