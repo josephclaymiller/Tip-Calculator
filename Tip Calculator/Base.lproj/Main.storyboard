@@ -146,6 +146,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UVJ-rR-sKs"/>
                     <connections>
+                        <outlet property="defaultTipSlider" destination="OEA-DY-xOq" id="m8A-FL-eER"/>
                         <outlet property="tipPercentLabel" destination="BBL-ys-gus" id="6Kn-Nz-R0g"/>
                     </connections>
                 </viewController>
