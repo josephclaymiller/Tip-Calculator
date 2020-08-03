@@ -48,12 +48,12 @@ I added a settings page to allow the user to set the default tip. The main view 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/)
 
-### Version 3: Animated Background
+### Version 4: Animated Background
 I animated the background of the main view to cycle through the colors of the rainbow.
 
 <img src='animatedBackground.gif' title='Tip Calculator Version 4' alt='Tip Calculator Version 4' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [LiceCap](http://www.cockos.com/licecap/)
 
 ## Notes
 
