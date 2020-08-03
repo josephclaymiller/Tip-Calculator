@@ -13,7 +13,7 @@ The following **required** functionality is complete:
 * [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
+* [x] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -30,16 +30,22 @@ Here are walkthroughs of implemented user stories:
 ### Version 1: Segmented Control
 The initial app used a segmented control to select between a 15%, 18%, and 20% tip rate.
 
-<img src='tipCalcSeg.gif' title='Tip Calculator Version 1' alt='Tip Calculator version 1' />
+<img src='tipCalcSeg.gif' title='Tip Calculator Version 1' alt='Tip Calculator Version 1' />
 
 ### Version 2: Slider
 The segmented control was replaced with a slider so that any percent between 0% and 100% could be selected.
 
-<img src='tipCalcSlider.gif' title='Tip Calculator Version 2' alt='Tip Calculator version 2' />
+<img src='tipCalcSlider.gif' title='Tip Calculator Version 2' alt='Tip Calculator Version 2' />
 
-GIFs created with [Recordit](https://recordit.co/).
+## Version 3: Settings Page
+I added a settings page to allow the user to set the default tip. The main view controller retrieves the default tip which is saved in UserDefaults.
+
+<img src='settingsPage.gif' title='Tip Calculator Version 3' alt='Tip Calculator Version 3' />
 
 
+GIFs created with [Recordit](https://recordit.co/)
+
+and with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
