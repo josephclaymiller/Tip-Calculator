@@ -32,20 +32,21 @@ The initial app used a segmented control to select between a 15%, 18%, and 20% t
 
 <img src='tipCalcSeg.gif' title='Tip Calculator Version 1' alt='Tip Calculator Version 1' />
 
+GIF created with [Recordit](https://recordit.co/)
+
 ### Version 2: Slider
 The segmented control was replaced with a slider so that any percent between 0% and 100% could be selected.
 
 <img src='tipCalcSlider.gif' title='Tip Calculator Version 2' alt='Tip Calculator Version 2' />
 
-## Version 3: Settings Page
+GIF created with [Recordit](https://recordit.co/)
+
+### Version 3: Settings Page
 I added a settings page to allow the user to set the default tip. The main view controller retrieves the default tip which is saved in UserDefaults.
 
 <img src='settingsPage.gif' title='Tip Calculator Version 3' alt='Tip Calculator Version 3' />
 
-
-GIFs created with [Recordit](https://recordit.co/)
-
-and with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
