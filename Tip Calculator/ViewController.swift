@@ -21,6 +21,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Load saved settings
+        loadSavedSettings()
+    }
+    
+    func loadSavedSettings() {
+        // retrieve the default tip percentage from UserDefaults
+        let defaults = UserDefaults.standard
+        // and use it to update the tip amount
+        let tipValue = defaults.integer(forKey: "defaultTip")
+        tipSlider.setValue(Float(tipValue)/100, animated: true)
+        calculateTip(tipSlider!)
+    }
 
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
