@@ -86,7 +86,13 @@
                             <outletCollection property="gestureRecognizers" destination="dEE-Qw-WFT" appends="YES" id="AWq-1w-RQl"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="iKx-uD-uma"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="iKx-uD-uma">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="aSZ-61-KFZ">
+                            <connections>
+                                <segue destination="2H5-Gs-hey" kind="show" id="ZzG-cu-3bc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="E16-oi-9Ap" id="S2x-lP-VRH"/>
                         <outlet property="tipLabel" destination="dX8-6M-zvj" id="uUF-iG-DHf"/>
@@ -103,6 +109,49 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="119.83695652173914"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="2hx-tZ-qyI">
+            <objects>
+                <viewController id="2H5-Gs-hey" customClass="SettingsViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWq-Za-ddF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLb-sS-ERU">
+                                <rect key="frame" x="20" y="159" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.15000000596046448" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OEA-DY-xOq">
+                                <rect key="frame" x="18" y="203" width="378" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="17i-zC-2hN"/>
+                                    <action selector="setDefaultTip:" destination="2H5-Gs-hey" eventType="valueChanged" id="wKS-QD-gsL"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBL-ys-gus">
+                                <rect key="frame" x="140" y="158" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DZY-PO-AIi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UVJ-rR-sKs"/>
+                    <connections>
+                        <outlet property="tipPercentLabel" destination="BBL-ys-gus" id="6Kn-Nz-R0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G98-Ce-Piv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8115942028987" y="119.83695652173914"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="enM-Xf-TyE">
